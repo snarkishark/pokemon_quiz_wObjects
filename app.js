@@ -5,7 +5,10 @@ $(document).ready(function(){
 		console.log("should start a new game");
 		$("#start").hide();
 		newQuiz = Object.create(Quiz);
-		showQuestion(questions[0]);		
+		showQuestion(questions[0]);	
+		correct = 0;
+		incorrect = 0;
+		current=0;	
 	});
 	
 	$(".currentQuestion").text("1");
@@ -127,10 +130,8 @@ function wait(f,param){
 function restart(){
 	$("#start").show();
 	$("#theQuiz").hide();
-	correct = 0;
-	incorrect = 0;
-	current=0;
 	$("#start h1").text("You got "+correct+" out of "+questions.length+" correct answers!");
 	$(".start.tile").text("Play Again?");
+
 	
 }
