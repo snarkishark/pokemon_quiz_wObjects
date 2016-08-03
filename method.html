@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon Quiz</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+		<div class="note">Hi Max! My problem seems to be that the method does not know what instance of the object it belongs to, and cannot access the "text" property of the quiz object. You'll see in line 83 it returns undefined after the first question.</div>
+	<section id="start">
+		<h1>Get ready!</h1>
+		<div class="tile start">Start!</div>
+	</section>
+	
+	
+
+	<section id="theQuiz">
+		<h1 class="text"></h1>
+		<section id="stats">	
+	
+		Question: <span class="currentQuestion"></span>/<span class="totalQuestions"></span>. Correct: <span class="correct">0</span>. Incorrect: <span class="incorrect">0.</span>
+			</section>
+		<ul>
+		
+		</ul>
+		
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="method.js"></script>
+
+</body>
+</html>
