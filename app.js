@@ -127,10 +127,10 @@ function wait(f,param){
 function restart(){
 	$("#start").show();
 	$("#theQuiz").hide();
+	$("#start h1").text("You got "+correct+" out of "+questions.length+" correct answers!");
+	$(".start.tile").text("Play Again?");
 	correct = 0;
 	incorrect = 0;
 	current=0;
-	$("#start h1").text("You got "+correct+" out of "+questions.length+" correct answers!");
-	$(".start.tile").text("Play Again?");
 	
 }
